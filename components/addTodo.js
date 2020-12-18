@@ -11,7 +11,7 @@ export default function AddTodo({submitHandler}) {
     return (
         <View>
             <TextInput
-            style={StyleSheet.input}
+                style={StyleSheet.input}
                 placeholder='new todo...'
                 onChangeText={changeHandler}
             />
