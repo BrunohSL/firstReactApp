@@ -1,4 +1,3 @@
-import { styleSheets } from 'min-document';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
     card: {
         borderRadius: 6,
         elevation: 3,
-        backgroundColor: "#fff",
+        backgroundColor: '#fff',
         shadowOffset: {
             width: 1,
             height: 1,
@@ -29,6 +28,6 @@ const styles = StyleSheet.create({
     },
     cardContent: {
         marginHorizontal: 18,
-        marginVertical: 10,
+        marginVertical: 20,
     },
 });

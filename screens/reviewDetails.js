@@ -5,19 +5,19 @@ import Card from '../shared/card';
 
 export default function ReviewDetails({ navigation }) {
     const rating = navigation.getParam('rating');
+
     return (
         <View style={globalStyles.container}>
             <Card>
-                <Text>{ navigation.getParam('title') }</Text>
+                <Text style={globalStyles.titleText}>{ navigation.getParam('title') }</Text>
                 <Text>{ navigation.getParam('body') }</Text>
-                {/* <Text>{ navigation.getParam('rating') }</Text> */}
                 <View style={styles.rating}>
                     <Text>GameZone rating: </Text>
-                    <Image source={images.ratings[rating]}></Image>
+                    <Image source={images.ratings[rating]} />
                 </View>
             </Card>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -29,4 +29,4 @@ const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderTopColor: '#eee',
     }
-})
+});
